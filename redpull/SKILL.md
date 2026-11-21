@@ -1,11 +1,11 @@
 ---
 name: redpull
-description: Tìm và đọc bài trên Reddit bằng kho Redpull của anh Phi (Reddit API chính thức, chỉ đọc). Dùng khi cần biết người dùng Reddit nói gì về một sản phẩm, lỗi, mẹo, kinh nghiệm (ví dụ "có ai làm được X với thiết bị Y không"), khi cần đọc một thread Reddit theo đường dẫn, hoặc khi tìm trên mạng chung không ra vì nội dung nằm trên Reddit.
+description: Tìm và đọc bài trên Reddit bằng kho Redpull (Reddit API chính thức, chỉ đọc). Dùng khi cần biết người dùng Reddit nói gì về một sản phẩm, lỗi, mẹo, kinh nghiệm (ví dụ "có ai làm được X với thiết bị Y không"), khi cần đọc một thread Reddit theo đường dẫn, hoặc khi tìm trên mạng chung không ra vì nội dung nằm trên Reddit.
 ---
 
 # Redpull: tìm và đọc Reddit
 
-Bản chính: kho `Khogao/my-skills`, thư mục `redpull/` (máy anh Phi: `C:\Work\Claude Code\my-skills`).
+Bản chính: kho `Khogao/my-skills`, thư mục `redpull/`.
 Bản đang chạy được chép vào `~/.claude/skills/redpull/`. Sửa bản chính rồi chép lại.
 Công cụ `reddit_search.py` nằm ngay trong thư mục kỹ năng này; kho `Khogao/Redpull` giữ các script lưu thread thành HTML.
 
@@ -16,7 +16,7 @@ Công cụ `reddit_search.py` nằm ngay trong thư mục kỹ năng này; kho `
   hoặc file `.env` cạnh `reddit_search.py` (file `.env` nằm trong `.gitignore`, không đưa lên git):
   `REDDIT_CLIENT_ID`, `REDDIT_CLIENT_SECRET`, `REDDIT_USER_AGENT` (ví dụ `redpull/1.0 by <tên reddit>`).
 - Reddit chặn tìm kiếm qua endpoint JSON công khai (trả 403), nên công cụ chỉ dùng API chính thức.
-  Thiếu khoá thì công cụ dừng và báo; khi đó hỏi anh Phi, không tìm cách đi vòng (đổi User-Agent, trang trung gian…).
+  Thiếu khoá thì công cụ dừng và báo; khi đó hỏi người dùng, không tìm cách đi vòng (đổi User-Agent, trang trung gian…).
 
 ## Cách dùng
 
